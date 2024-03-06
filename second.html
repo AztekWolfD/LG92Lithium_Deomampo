@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <h1>Welcome to the Second Page!</h1>
+    <img id="pix" src="pics/grr.jpg" width="700" height="700" style="border:2px solid rgb(255, 0, 149)">
+    <br>
+    <button onclick="changeImage()">Change image</button>
+    <button onclick="gobackImage()">Go back to previous image</button>
+
+    <script>
+        function changeImage(){
+            pix.src = "pics/grinch.jpg";
+        }
+
+        function gobackImage(){
+            pix.src = "pics/grr.jpg";
+        }
+    </script>
+</body>
+</html>
